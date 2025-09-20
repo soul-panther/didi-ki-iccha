@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Question</title>
+  <style>
+    body {
+      background-color: #FFB6C1; /* Light pink background */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .dialog-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .dialog-box h2 {
+      margin: 0;
+    }
+    .options {
+      margin-top: 20px;
+    }
+    .options button {
+      background-color: #FF69B4; /* Hot pink button */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      transition: background-color 0.3s;
+    }
+    .options button:hover {
+      background-color: #FF1493; /* Darker pink on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dialog-box">
+    <h2>Are you crazy?</h2>
+    <div class="options">
+      <button onclick="showPopup()">Yes</button>
+      <button onclick="showPopup()">Yes</button>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      alert("Get lost");
+    }
+  </script>
+
+</body>
+</html>
